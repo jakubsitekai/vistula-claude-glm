@@ -1,0 +1,16 @@
+[
+  {
+    "version": "1.1.0",
+    "date": "2026-10-28",
+    "title": "Feedback studentów i zgłoszenia w panelu",
+    "description": "Studenci (także anonimowo) mogą zgłaszać uwagi o platformie: błąd, sugestię, brakującą funkcję lub inne. Prowadzący widzi zgłoszenia w panelu, zmienia ich status i może utworzyć z nich issue na GitHubie.",
+    "issue": "https://github.com/jakubsitekai/claude-glm/issues/7"
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-10-19",
+    "title": "Platforma quizowa na Supabase",
+    "description": "Logowanie e-mail/hasło (opcjonalnie GitHub), wiązanie identyfikatora studenta, quizy z losowaniem pytań, ocenianie po stronie serwera, panel prowadzącego (sesje, wyniki, bank pytań, role).",
+    "issue": "https://github.com/jakubsitekai/claude-glm/pull/3"
+  }
+]
