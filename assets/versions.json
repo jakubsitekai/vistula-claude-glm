@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.2.0",
+    "date": "2026-11-04",
+    "title": "Roster studentów i samodzielna zmiana danych potwierdzana e-mailem",
+    "description": "Lista studentów z dziekanatu (CSV/PDF) w bazie i w panelu prowadzącego. Student może zgłosić zmianę danych (np. login GitHub) — zmiana następuje dopiero po kliknięciu jednorazowego linku wysłanego na zarejestrowany adres e-mail (ważny 15 minut). Prowadzący widzi żądania, pełny audyt i może zatwierdzić zmianę ręcznie.",
+    "issue": "https://github.com/jakubsitekai/claude-glm/issues/25"
+  },
+  {
     "version": "1.1.0",
     "date": "2026-10-28",
     "title": "Feedback studentów i zgłoszenia w panelu",
