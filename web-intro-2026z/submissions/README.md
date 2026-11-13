@@ -1,14 +1,24 @@
-# Zgłoszenia studentów — tylko linki, bez danych osobowych
+# Zgłoszenia studentów — GitHub Pull Request
 
-Zgłoszenia są przyjmowane jako GitHub Pull Request. Nie publikuj w repozytorium ani PR numeru indeksu, pełnego imienia i nazwiska, adresu e-mail, telefonu, CV zawierającego prywatne dane ani szczegółów ocen.
+Zgłoszenia przyjmowane są przez PR w publicznym repozytorium zajęć. Dokumenty z ocenami i certyfikaty zawierające dane osobowe pozostają w prywatnych kanałach uczelnianych.
+
+## Konto i numer indeksu
+Preferowany login jest **identyczny jak na Team Project**:
+- `vistula-team-project-123456`
+- `vistula-team-project-123456-abc`
+
+W przykładzie `123456` to numer indeksu, `abc` to opcjonalny sufiks z trzech małych liter. Można używać jednego konta na obu przedmiotach; imię i nazwisko nie są wymagane. Numer indeksu ujawniony w loginie może być daną osobową — warto korzystać z takiego formatu świadomie. Jeśli student nie chce publikować swojego numeru w loginie, może użyć innego konta i potwierdzić przyporządkowanie prywatnie przez uczelniany system. Sam numer w loginie nie stanowi dowodu tożsamości.
 
 ## Zgłoszenie
-1. Zaloguj się do GitHub i przygotuj własne repozytorium z projektem.
-2. W tym katalogu utwórz NOWY plik o nazwie odpowiadającej Twojemu loginowi GitHub, np. submissions/student-web-42.md.
-3. Skopiuj pola z _TEMPLATE.md i wpisz linki do swojego repozytorium oraz działającej strony.
-4. Zatwierdź zmianę, proponując Pull Request (w razie braku uprawnień GitHub pozwoli przygotować fork).
-5. W tytule PR użyj: [CV / KURS / PROJEKT] login GitHub. Nie wpisuj identyfikatora uczelnianego.
-6. Jeśli prowadzący nie zna Twojego loginu, potwierdź jego przyporządkowanie prywatnie kanałem uczelnianym. Nie wpisuj numeru indeksu do publicznego PR.
-7. Po wysłaniu PR rozwiązanie jest zgłoszone. Nie należy samodzielnie edytować repozytorium quizu poza tym katalogiem.
+1. Zaloguj się do GitHub i przygotuj własne publiczne repozytorium z projektem, `zad1`–`zad4`, i stroną GitHub Pages.
+2. W tym katalogu dodaj nowy plik z loginem, np. `submissions/vistula-team-project-123456.md`.
+3. Skopiuj pola z `_TEMPLATE.md` i wpisz adresy repozytorium i działającej strony.
+4. Utwórz Pull Request (jeśli nie masz praw zapisu, GitHub pozwoli zrobić fork i PR).
+5. W tytule PR podaj: `[CV / KURS / PROJEKT] <login>`.
+6. Jeśli login nie pozwala przyporządkować pracy do konta uczelnianego, potwierdź powiązanie prywatnie przez Platon/uczelniany kanał.
+7. Praca jest zgłoszona w chwili utworzenia PR. Możesz ją później aktualizować. Nie edytuj części repozytorium quizowego.
 
-Uwaga: PR i jego historia są publiczne. Certyfikat Coursera albo inne dokumenty z danymi osobowymi prześlij prywatnie prowadzącemu, a w formularzu zaznacz jedynie „dowód ukończenia do przedstawienia prywatnie”.
+## Czego nie publikować
+Nie publikuj adresów zamieszkania, prywatnych numerów telefonów, realnego CV z danymi wrażliwymi, ocen, uczelnianego adresu e-mail ani certyfikatów. Certyfikaty i dowody ukończenia kursu możesz okazać prywatnie.
+
+Na 4,0 i 5,0 wymagane są indywidualne obrony projektów i opanowanego materiału. Samo zgłoszenie linków albo certyfikatu nie przesądza o uzyskaniu wyższej oceny.

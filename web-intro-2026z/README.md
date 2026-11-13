@@ -11,6 +11,6 @@ Pliki:
 - submissions/README.md i _TEMPLATE.md — procedura PR
 - examples/cv.json — przykładowy format JSON dla zadania 4
 
-Uwaga organizacyjna: zapisy i oceny przechowuj prywatnie w systemie uczelni; zgłoszenia publiczne mogą zawierać tylko pseudonimy i URL projektów. Zwolnienie z obowiązku stawiania się na zajęciach możliwe wyłącznie w granicach uczelnianych zasad obecności.
+Uwaga organizacyjna: zapisy i oceny przechowuj prywatnie w systemie uczelni. Zalecany login GitHub jest zgodny z Team Project: `vistula-team-project-123456` lub `vistula-team-project-123456-abc`; numer indeksu może być publiczny w loginie, ale możliwość powiązania istniejącego konta prywatnie powinna pozostać dostępna. Publiczne PR nie zawierają wyników oceniania. Zwolnienie z obowiązku stawiania się na zajęciach możliwe wyłącznie w granicach uczelnianych zasad obecności.
 
 Prawa do tej witryny: materiały przygotowane dla zajęć dydaktycznych; kursy zewnętrzne pozostają własnością ich dostawców.

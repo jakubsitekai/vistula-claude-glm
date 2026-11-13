@@ -76,7 +76,7 @@
         <div class="card"><span class="tag">Cel praktyczny</span><h3>Od HTML do aplikacji</h3><p>Na początku statyczna strona CV, na końcu strona pobierająca JSON i budująca treść z użyciem DOM.</p></div>
         <div class="card"><span class="tag good">Samodzielna nauka</span><h3>Różne poziomy zaangażowania</h3><p>Wybierz podstawowe zadania, kurs lub rozbudowany projekt. Coursera jest rekomendowana, ale nieobowiązkowa.</p></div>
       </div>
-      <p class="note"><strong>Zasada uczciwego oceniania:</strong> na 3,0 sprawdzana jest kompletność i działanie oddanego rozwiązania. Przy obronie projektów na wyższe oceny istotna jest umiejętność wyjaśnienia i zmodyfikowania aplikacji. Samo korzystanie z AI nie obniża oceny.</p>
+      <p class="note"><strong>Zasada uczciwego oceniania:</strong> na 3,0 sprawdzana jest kompletność i działanie oddanego rozwiązania. Przy ocenie 4,0 i 5,0 jest pełna indywidualna obrona: pytania z teorii, wyjaśnianie działania kodu i zmiany wskazane przez prowadzącego, bez sztywnego limitu liczby zmian. Samo korzystanie z AI nie obniża oceny.</p>
     </div></section>
 
     <section id="plan" class="subtle"><div class="wrap">
@@ -117,8 +117,8 @@
       <h2>Zaliczenie i ocenianie</h2>
       <div class="grid">
         <div class="card"><span class="tag good">3,0 · podstawowe zaliczenie</span><h3>Cztery wersje CV</h3><p>Wykonanie zadań 1–4 i przekazanie działających linków. Nie przewiduje się obowiązkowej indywidualnej obrony. Można korzystać z AI. Sprawdzana jest kompletność rozwiązania, nie autorstwo poszczególnych linijek.</p></div>
-        <div class="card"><span class="tag">4,0 · dwie równoważne ścieżki</span><h3>Kurs albo rozszerzenie CV</h3><p><strong>A:</strong> po CV 1–4 ukończ zaakceptowany kurs Coursera lub równoważny materiał i przedstaw potwierdzenie wykonania. Bez dodatkowej obrony.</p><p><strong>B:</strong> po CV 1–4 dodaj edycję danych przez formularz, walidację, zapis i odczyt z <code>localStorage</code>. Krótka demonstracja i jedna zmiana kodu na żywo.</p></div>
-        <div class="card"><span class="tag gold">5,0 · projekt zaawansowany</span><h3>Aplikacja Biblioteka</h3><p>CV 1–4, kurs albo równoważny materiał, aplikacja autorzy–książki z bazą Supabase, CRUD i indywidualna obrona z dwiema modyfikacjami. Szczegóły poniżej.</p></div>
+        <div class="card"><span class="tag">4,0 · dwie równoważne ścieżki</span><h3>Kurs albo rozszerzenie CV</h3><p><strong>A:</strong> po CV 1–4 ukończ zaakceptowany kurs Coursera lub równoważny materiał i przedstaw potwierdzenie wykonania.</p><p><strong>B:</strong> po CV 1–4 dodaj edycję danych przez formularz, walidację, zapis i odczyt z <code>localStorage</code>.</p><p><strong>Obowiązkowa obrona w obu ścieżkach:</strong> omówienie działania własnego CV, pytania z teorii (i z kursu lub rozszerzenia), wskazywanie fragmentów kodu, modyfikacje i debugowanie na polecenie prowadzącego. Nie ma limitu jednej zmiany; dostarczenie kursu lub projektu nie przesądza automatycznie o ocenie dobrej.</p></div>
+        <div class="card"><span class="tag gold">5,0 · projekt zaawansowany</span><h3>Aplikacja Biblioteka</h3><p>CV 1–4 <strong>oraz komplet jednej ze ścieżek na 4,0 (A albo B)</strong>, a następnie aplikacja autorzy–książki z bazą Supabase i CRUD. Wymagana jest pełna indywidualna obrona: architektura, teoria, demonstracja działania, analiza błędów i modyfikacje kodu według poleceń prowadzącego. Szczegóły poniżej.</p></div>
         <div class="card"><span class="tag">3,5 i 4,5</span><h3>Oceny pośrednie</h3><p>Możliwe na podstawie zakresu, poprawności, samodzielności i poziomu zrozumienia podczas dodatkowej weryfikacji. Konkretna ocena zależy od osiągniętych efektów uczenia się.</p></div>
       </div>
       <h3>Oddanie wcześniej i praca we własnym tempie</h3>
@@ -132,15 +132,15 @@
       <div class="grid">
         <div class="card"><h3>Model danych</h3><ul><li><code>authors</code>: identyfikator, imię i nazwisko autora (lub nazwa), inne pole opcjonalne</li><li><code>books</code>: identyfikator, tytuł, rok publikacji, identyfikator autora</li><li>Relacja jeden autor — wiele książek; klucze główne i obce</li></ul></div>
         <div class="card"><h3>Funkcje aplikacji</h3><ul><li>Lista autorów i książek oraz szczegóły</li><li>Dodawanie, edycja, usuwanie obu typów rekordów (CRUD)</li><li>Filtrowanie książek według autora lub wyszukiwanie po tytule</li><li>Formularze z walidacją i komunikatami błędów</li></ul></div>
-        <div class="card"><h3>Komunikacja i bezpieczeństwo</h3><ul><li>Wywołania REST/klient Supabase z przeglądarki</li><li>Obsługa asynchroniczności, loading i błędów</li><li>Uwierzytelnianie i RLS dla modyfikacji danych</li><li>W frontendzie tylko klucz publishable/anon, nigdy secret/service_role</li></ul></div>
-        <div class="card"><h3>Obrona indywidualna</h3><ul><li>Prezentacja działającej aplikacji</li><li>Wyjaśnienie HTML, JS, API, SQL, relacji i zasad RLS</li><li>Dwie niewielkie modyfikacje, np. nowe pole lub filtrowanie</li><li>Rozmowa o tym, co pomagało tworzyć rozwiązanie, w tym AI</li></ul></div>
+        <div class="card"><h3>Komunikacja z backendem</h3><ul><li>Wywołania REST lub klient Supabase z przeglądarki</li><li>Obsługa asynchroniczności, ładowania i błędów</li><li>Operacje GET, POST, PATCH/PUT, DELETE</li><li>Weryfikacja trwałego zapisu danych po odświeżeniu strony</li></ul></div>
+        <div class="card"><h3>Obrona indywidualna</h3><ul><li>Prezentacja i omówienie CV oraz aplikacji Biblioteka</li><li>Pytania z JavaScript, DOM, JSON, HTTP/REST, SQL i relacji w bazie danych</li><li>Wskazywanie fragmentów kodu i wykonanie wskazanych modyfikacji bez określonego limitu</li><li>Diagnoza błędów, wyjaśnienie zastosowanych rozwiązań i roli AI</li></ul></div>
       </div>
-      <p><strong>Alternatywa technologiczna:</strong> po uzgodnieniu możliwa implementacja równoważnego REST backendu w PHP, Javie/Spring Boot lub Node.js. Kryteria funkcjonalne i obrona są takie same.</p>
+      <p><strong>Alternatywa technologiczna:</strong> po uzgodnieniu możliwa implementacja równoważnego REST backendu w PHP, Javie/Spring Boot lub Node.js. Kryteria funkcjonalne i obrona są takie same.</p><p class="note"><strong>Zalecenia, a nie wymagania na ocenę:</strong> uwierzytelnianie i RLS nie są obowiązkowe w tym ćwiczeniu. Projekt powinien używać wyłącznie fikcyjnych danych w odrębnej bazie testowej. Nie wolno udostępniać klucza <code>secret</code> ani <code>service_role</code> w publicznym frontendzie; dostępny publicznie klucz publishable/anon służy do wywołań klienta. Publiczne operacje zapisu mogą zostać wykorzystane przez osoby postronne.</p>
     </div></section>
 
     <section id="kursy" class="subtle"><div class="wrap">
       <h2>Materiały i samodzielna nauka</h2>
-      <p>Można wybrać jeden kurs odpowiadający własnemu doświadczeniu, także spoza listy po uzgodnieniu z prowadzącym. Dla kursu krótkiego wymagane jest ukończenie wszystkich modułów i ćwiczeń, dla długiego można uzgodnić proporcjonalny zakres.</p>
+      <p>Można wybrać jeden kurs odpowiadający własnemu doświadczeniu, także spoza listy po uzgodnieniu z prowadzącym. Dla kursu krótkiego wymagane jest ukończenie wszystkich modułów i ćwiczeń, dla długiego można uzgodnić proporcjonalny zakres. Ocena 4,0 lub 5,0 wymaga indywidualnej obrony wiedzy i projektu.</p>
       <div class="grid">
         <div class="course"><span class="tag good">Początkujący</span><h3>IBM — Introduction to Web Development with HTML, CSS, JavaScript</h3><p>Wprowadzenie do frontendu, HTML, CSS i JS.</p><a href="https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript" target="_blank" rel="noopener noreferrer">Otwórz kurs</a></div>
         <div class="course"><span class="tag">Frontend</span><h3>University of Michigan — Interactivity with JavaScript</h3><p>JavaScript, zdarzenia i interaktywność.</p><a href="https://www.coursera.org/learn/javascript" target="_blank" rel="noopener noreferrer">Otwórz kurs</a></div>
@@ -153,14 +153,14 @@
 
     <section id="oddawanie"><div class="wrap">
       <h2>Jak oddać pracę przez GitHub</h2>
-      <p>Oddawanie odbywa się przez <strong>pull request (PR)</strong> do publicznego repozytorium kursu. Nie trzeba wysyłać kodu na mail ani zapisywać się do wspólnego zespołu. Linki do repozytoriów i aplikacji mogą być publiczne; oceny oraz dane identyfikacyjne są przekazywane wyłącznie kanałem prywatnym.</p>
+      <p>Oddawanie odbywa się przez <strong>pull request (PR)</strong> do publicznego repozytorium kursu. Zalecane jest wykorzystanie tego samego konta GitHub co na zajęciach Team Project IT. Repozytoria i linki do aplikacji będą publiczne, a oceny pozostaną prywatne.</p><p><strong>Preferowany format konta, zgodny z Team Project:</strong> <code>vistula-team-project-123456</code> lub <code>vistula-team-project-123456-abc</code>, gdzie <code>123456</code> oznacza przykładowy numer indeksu, a <code>abc</code> jest opcjonalnym trzyliterowym sufiksem. Imię i nazwisko nie są wymagane. Osoba, która nie chce publikować numeru indeksu w loginie, może zgłosić istniejące konto i potwierdzić powiązanie prywatnie w systemie uczelni.</p>
       <ol>
-        <li>Utwórz konto GitHub. Możesz posługiwać się pseudonimem; nie wpisuj nazwiska ani numeru indeksu do publicznego profilu, jeśli nie chcesz.</li>
+        <li>Użyj istniejącego konta GitHub z Team Project lub załóż konto. Rekomendowany format: <code>vistula-team-project-NUMER_INDEKSU</code> (ewentualnie <code>-abc</code>).</li>
         <li>Utwórz własne publiczne repozytorium CV z katalogami <code>zad1</code>–<code>zad4</code> i włącz GitHub Pages.</li>
         <li>W repozytorium kursowym przygotuj nowy plik <code>web-intro-2026z/submissions/TWOJ_LOGIN.md</code>. Skopiuj format ze <a href="submissions/_TEMPLATE.md">wzoru zgłoszenia</a>.</li>
-        <li>Wpisz login GitHub, link do repozytorium, link do działającego CV i wybraną ścieżkę oceny. Nie publikuj numeru indeksu, telefonu, adresu ani certyfikatów z danymi osobowymi.</li>
+        <li>Wpisz login GitHub, link do repozytorium, link do działającego CV i wybraną ścieżkę oceny. Numer indeksu może występować w loginie, natomiast nie publikuj telefonu, adresu ani certyfikatów z danymi osobowymi.</li>
         <li>Zaproponuj zmianę (PR). Konto bez prawa zapisu może wykonać fork i zaproponować PR. Zgłoszenie jest złożone po utworzeniu PR; nie musi zostać od razu scalone.</li>
-        <li>Jeśli GitHub login nie pozwala prowadzącemu przyporządkować pracy do studenta, potwierdź tożsamość prywatnie przez uczelniany kanał, podając swój login/URL PR.</li>
+        <li>Jeśli login nie zawiera numeru indeksu, potwierdź powiązanie z kontem uczelnianym prywatnie, podając login GitHub i URL PR. Sam numer w loginie nie potwierdza tożsamości.</li>
       </ol>
       <div class="actions"><a class="btn" style="background:#2055a3;color:white" href="https://github.com/jakubsitekai/vistula-claude-glm/new/main/web-intro-2026z/submissions" target="_blank" rel="noopener noreferrer">Utwórz plik zgłoszenia w GitHub</a><a class="btn" style="border:1px solid #c7d3e2" href="https://github.com/jakubsitekai/vistula-claude-glm/pulls" target="_blank" rel="noopener noreferrer">Przeglądaj zgłoszenia PR</a></div>
       <p class="muted">W tym semestrze kurs jest opublikowany w osobnym katalogu istniejącego repozytorium Vistuli. To rozwiązanie techniczne; nie należy edytować plików głównej aplikacji quizowej.</p>
@@ -169,9 +169,9 @@
     <section id="faq" class="subtle"><div class="wrap">
       <h2>Najczęstsze pytania</h2>
       <div class="grid">
-        <div class="card"><h3>Czy można korzystać z AI?</h3><p>Tak. Na 3,0 liczy się kompletność i działanie. Na wyższe oceny w ścieżkach praktycznych trzeba wyjaśnić kod i dokonać drobnej zmiany podczas rozmowy.</p></div>
+        <div class="card"><h3>Czy można korzystać z AI?</h3><p>Tak. Na 3,0 liczy się kompletność i działanie. Na 4,0 i 5,0 odbywa się obrona: pytania z teorii, wyjaśnienie kodu oraz modyfikacje i debugowanie według poleceń prowadzącego.</p></div>
         <div class="card"><h3>Czy moje CV musi być prawdziwe?</h3><p>Nie. Zalecane są fikcyjne dane. Nie publikuj prywatnego numeru telefonu, adresu czy innych wrażliwych informacji.</p></div>
-        <div class="card"><h3>Czy muszę zapłacić za Courserę?</h3><p>Nie. Dostępna jest bezpłatna ścieżka równoważnej nauki. Sam podgląd pierwszego modułu Coursery nie oznacza ukończenia całego kursu.</p></div>
+        <div class="card"><h3>Czy muszę zapłacić za Courserę?</h3><p>Nie. Dostępna jest bezpłatna ścieżka równoważnej nauki. Sam podgląd pierwszego modułu Coursery nie oznacza ukończenia całego kursu. Na 4,0 obowiązuje także obrona wiedzy i projektu CV.</p></div>
         <div class="card"><h3>Czy mogę oddać wcześniej?</h3><p>Tak. Pełny zestaw CV można oddać przed L4. Po zaakceptowaniu projektu można zamknąć ścieżkę podstawową, a udział w dalszych konsultacjach zależy od zasad uczelni.</p></div>
       </div>
     </div></section>
